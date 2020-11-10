@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  	body{
+  		background-color: #2B65EC;
+  	}
+  	h2{
+  		color: #2B65EC;
+  		font-family: arial;
+  		margin: 0;
+  		padding: 9px;
+  		font-size: 25px;
+  	}
+  	.media-body p{
+  		margin-bottom: 8px;
+  		font-size: 17px
+  	}
+  	.media-heading{
+  		font-size: 24px;
+  		font-weight: bolder;
+  	}
+  
+  </style>
+</head>
+<body>	
+	<div class="conatiner-fluid" style="background-color: #ffffff">
+		<h2 style="margin-left: 14px">Weather.inc <span><img src="/js/img/weather.png" style="width: 55px"></span></h2>
+	</div>
+	<div class="container-fluid" style="background-color: #2B65EC">
+			<div class="jumbotron" style="background-color: #eeeeee26; margin-top: 4%">
+
+			<form action="/action_page.php">
+    <div class="input-group">
+      <input type="text" class="form-control input-lg" placeholder="Search the location..." name="search">
+      <div class="input-group-btn">
+        <button class="btn btn-default btn-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+      </div>
+    </div>
+  </form>
+			</div>  
+			<div class="jumbotron" id="jumb" style="margin-top: 5%; display: none;">
+					<div class="media">
+					  <div class="media-left">
+					    <img id="weatherImg" src="" class="media-object" style="width:60px">
+					  </div>
+					  <div class="media-body">
+					    <h4 class="media-heading">Weather Summary</h4>
+					    <p id="city"></p>
+					    <p id="country"></p>
+					    <p id="time"></p>
+					    <p id="temp"></p>
+					    <p id="cond"></p>
+					  </div>
+					</div>
+			</div> 
+		</div>
+        <script src="/js/app.js"></script>
+</body>
+</html>
